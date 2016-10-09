@@ -9,6 +9,6 @@ t <- cbind(dateTime, t) ## Add DateTime column
 t$dateTime <- as.POSIXct(dateTime) ## Format dateTime Column
 
 ## Create plot1
-hist(t$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)")  ## Save file and close device
+hist(t$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", Col="Red")  ## Save file and close device
 dev.copy(png,"plot1.png", width=480, height=480) ## Save file
 dev.off() ##close device
